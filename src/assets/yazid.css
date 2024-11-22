@@ -3,4 +3,50 @@
   background-color: white;
   height: 246px;
   width: 225%;
+  overflow: hidden;
+}
+
+.element:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue; /* Border kotak */
+  border-radius: 0; /* Membuatnya kotak */
+  pointer-events: none; /* Hindari interferensi hover */
+  box-sizing: border-box; /* Pastikan border di dalam ukuran elemen */
+}
+
+.kotak{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(220, 60, 60);
+  margin: 0 auto;
+  margin-top: 10px;
+  cursor:pointer
+}
+
+.lingkaran{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(10, 255, 128);
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.segitiga{
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-left: 10px solid transparent; /* Setengah dari lebar total (20px) */
+  border-right: 10px solid transparent; /* Setengah dari lebar total (20px) */
+  border-bottom: 20px solid rgb(225, 69, 225); /* Sama dengan tinggi kotak */
+  cursor: pointer;
 }
