@@ -13,10 +13,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid blue; /* Border kotak */
+  border: 2px solid rgb(255, 255, 255); /* Border kotak */
   border-radius: 0; /* Membuatnya kotak */
   pointer-events: none; /* Hindari interferensi hover */
   box-sizing: border-box; /* Pastikan border di dalam ukuran elemen */
+}
+
+.rectangle:hover{
+  border: 2px solid salmon;
+}
+
+.circle:hover{
+  border: 2px solid slateblue;
 }
 
 .kotak{
